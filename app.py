@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, request
 
 app = Flask(__name__)
 
@@ -27,13 +27,22 @@ JOBS = [{
 
 @app.route('/')
 def hello():
-  return render_template('home.html', jobs=JOBS, company_name='Wiswol')
+    return render_template('home.html', jobs=JOBS, company_name='Wiswol')
 
 
 @app.route('/api/jobs')
 def list_jobs():
-  return jsonify(JOBS)
+    return jsonify(JOBS)
+
+
+@app.route('/jobForm/', methods=["POST", "GET"])
+def jobForm():
+    if request.method == "POST":
+        print(request.form)
+        return jsonify(request.form)
+    else:
+        return render_template('jobOpeningForm.html')
 
 
 if __name__ == '__main__':
-  app.run(host='0.0.0.0', debug=True)
+    app.run(host='0.0.0.0', debug=True)

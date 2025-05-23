@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Opening Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 40px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        textarea, input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<h2 style="text-align: center;">HR Job Opening Form</h2>
+
+<form action="#" method="post">
+    <label for="companyName">Company Name</label>
+    <input type="text" id="companyName" name="companyName" required>
+
+    <label for="aboutCompany">What Company Standard Follows</label>
+    <textarea id="aboutCompany" name="aboutCompany" rows="4" required></textarea>
+
+    <label for="responsibilities">Responsibilities of Candidate</label>
+    <textarea id="responsibilities" name="responsibilities" rows="4" required></textarea>
+
+    <label for="skillsRequired">Skills Required</label>
+    <textarea id="skillsRequired" name="skillsRequired" rows="3" required></textarea>
+
+    <label for="niceToHave">Nice to Have</label>
+    <textarea id="niceToHave" name="niceToHave" rows="3"></textarea>
+
+    <label for="compensation">Compensation and Offering</label>
+    <textarea id="compensation" name="compensation" rows="2" required></textarea>
+
+    <label for="jobId">Job ID</label>
+    <input type="text" id="jobId" name="jobId" required>
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
