@@ -15,7 +15,7 @@
    </head>  
    <body> 
      <div class="container">
-     <h1 class="text-center mt-2 mb-4">Wisowl Carrers</h1>
+     <h1 class="text-center mt-2 mb-4">{{company_name}} Carrers</h1>
      <img class="img-fluid" id="banner" src="https://cca4aa0d-9501-4c71-befa-d65b6a0e97da-00-tz1czyv1nn15.sisko.replit.dev/static/banner.jpg">
      <h2 class="text-center mt-2 mb-4">About Wisowl</h2>
      <p class="lead">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
@@ -23,7 +23,11 @@
      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
 
      <h2 class="text-center mt-2 mb-4"> Open Positions</h2>
-     <p> TODO:- </p>
+     <p>
+       {% for position in jobs %}
+        {% include 'jobItem.html' %}
+       {% endfor %}
+     </p>
        <div class="text-center mt-2 mb-4">
      <button class="btn btn-primary btn-lg btn-block">  CONTACT US</button>
        </div>
