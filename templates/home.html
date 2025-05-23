@@ -1,52 +1,31 @@
 <!Doctype html> <!-- home.html -->
 <html>
   <head>
-      <title>Home</title>
-    <style>  
-      h1 {
-        font-size: 40px;
-        font-family: Roboto;
-        font-weight: normal;
-        color: rgb(100, 102, 100);
-        text-align: center;
-      }
-      #banner {
-        width: 100%;
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <style>
+      #banner{
         height: 360px;
+        width: 100%;
         object-fit: cover;
       }
-      h2 {
-        font-family: Roboto;
-        font-size: 32px;
-        color: rgb(100, 102, 100);
-        text-align: center;
-        font-weight: normal;
-      }
-      p {
-        font-family: Roboto;
-        font-size: 16px;
-        text-align: center;
-        font-weight: normal;
-      }
-      #container {
-        max-width: 730px;
-        margin: 0 auto, 0 auto;
-      }
     </style>
+      <title>Home</title>
    </head>  
    <body> 
-     <div id="container">
-     <h1>Wisowl Carrers</h1>
-     <img id="banner" src="https://cca4aa0d-9501-4c71-befa-d65b6a0e97da-00-tz1czyv1nn15.sisko.replit.dev/static/banner.jpg" alt="Wisowl Carrers" height="320">
-     <h2>About Wisowl</h2>
-     <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+     <div class="container">
+     <h1 class="text-center mt-2 mb-4">Wisowl Carrers</h1>
+     <img class="img-fluid" id="banner" src="https://cca4aa0d-9501-4c71-befa-d65b6a0e97da-00-tz1czyv1nn15.sisko.replit.dev/static/banner.jpg">
+     <h2 class="text-center mt-2 mb-4">About Wisowl</h2>
+     <p class="lead">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
 
      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
 
-     <h2> Open Positions</h2>
+     <h2 class="text-center mt-2 mb-4"> Open Positions</h2>
      <p> TODO:- </p>
-       <div style= "text-align: center;">
-     <button>  CONTACT US</button>
+       <div class="text-center mt-2 mb-4">
+     <button class="btn btn-primary btn-lg btn-block">  CONTACT US</button>
        </div>
        </div>
    </body>
